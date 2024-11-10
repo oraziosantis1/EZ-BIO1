@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./src/assets/moon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Unificazione delle richieste per Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@100;300&family=Lato:wght@300;700&family=Noto+Sans:wght@500&family=Rubik&family=Roboto+Mono&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    
+    <!-- Open Graph meta tags per il miglioramento nella condivisione sui social -->
+    <meta property="og:title" content="SCARED">
+    <meta property="og:description" content="link in bio service | scared">
+    <meta property="og:image" content="https://media1.tenor.com/m/B3K_YPnNyucAAAAd/porsche-911.gif">
+    <meta property="og:url" content="https://shdw.site">
+
+    <title>Scared</title>
+ 
+    <script>
+      // Funzione per animare il titolo
+      document.addEventListener('DOMContentLoaded', function () {
+          animateTitle();
+      });
+
+      function animateTitle() {
+          const originalTitle = 'scared'; // Modifica il titolo animato qui
+          let index = 0;
+
+          setInterval(function () {
+              index = (index + 1) % (originalTitle.length + 1);
+              document.title = originalTitle.substring(0, index);
+          }, 300); 
+      }
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
